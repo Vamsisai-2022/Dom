@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>darkmode</title>
+    <style>
+        .container{
+              border: 1px solid blue;
+              background-color: white;
+              width: 200px;
+              height:100px;
+              align-items: center;
+              justify-content: center;
+              display: flex;
+              border-radius: 5px;
+              margin-left: 600px;
+              margin-top: 300px;
+        }
+        button{
+            margin-top: 140px;
+            margin-right: 10px;
+            position: fixed;
+            border-radius: 5px;
+            width: 50px;
+            height: 25px;
+            
+        }
+        .container.active{
+            background-color: black;
+            color: white;
+            text-transform: uppercase;
+            border: 2px solid red;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <script>
+      function darkmode(){
+
+    let darkmode = document.querySelector('.container');
+
+    document.querySelector('.btn').onclick =()=>{
+        darkmode.classList.toggle('active');
+    }
+}
+    
+    </script>
+
+
+
+    <div class="container">
+        vamsi
+        <button class="btn" onclick="darkmode()">click</button>
+    </div>
+    
+</body>
+</html>
