@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coloring3</title>
+</head>
+<body>
+
+    <div>
+        <h1 id="myname">Vamsi Sai</h1>
+            
+        <button id="blue">Blue</button>
+        <button id="red">red</button>
+
+        <button id="green">green</button>
+
+        
+    </div>
+    
+<script>
+    let name = document.getElementById("myname");
+
+    let blue = document.getElementById("blue");
+
+    let red = document.getElementById("red");
+
+    let green = document.getElementById("green");
+
+    blue.addEventListener("click",()=>{
+        name.style.color = "blue";
+    });
+
+    red.addEventListener("click",()=>{
+        name.style.color = "red";
+    });
+    green.addEventListener("click",()=>{
+        name.style.color = "green";
+    })
+
+    
+    
+
+</script>
+    
+</body>
+</html>
